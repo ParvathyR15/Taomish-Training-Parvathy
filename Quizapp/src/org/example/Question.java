@@ -35,6 +35,10 @@ public class Question implements Questioninterface {
 
         }
     }
+
+    public int getTotalQuestions() {
+        return quiz.size();
+    }
 }
 
 

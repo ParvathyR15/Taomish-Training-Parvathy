@@ -12,7 +12,7 @@ public class Main {
 
         Question question = new Question();
         Answers answer = new Answers();
-        Score score = new Score();
+        Score score = new Score(question.getTotalQuestions());
 
 
         for (String questionText : ((Question) question).quiz.keySet()) {
@@ -21,6 +21,7 @@ public class Main {
 
             System.out.println("\nEnter your answer (A, B, C, D):");
             String userAnswer = scanner.nextLine().toUpperCase();
+
 
 
             if (answer.checkAnswer(questionText, userAnswer)) {
@@ -34,7 +35,7 @@ public class Main {
         }
 
 
-        System.out.println("\nYour final score is: " + score.fetchScore());
+        System.out.println("\nYour final score is: " + score.getScoreAsFraction());
 
         scanner.close();
     }
