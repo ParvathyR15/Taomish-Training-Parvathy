@@ -1,1 +1,0 @@
-Error: Insufficient funds. Current balance: $500.0
