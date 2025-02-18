@@ -1,0 +1,502 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/*.top-nav {
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.search-icon {
+    color: #6c757d;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #495057;
+}
+
+.search-bar input::placeholder {
+    color: #adb5bd;
+}
+
+.notification {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left:auto;
+}
+
+.bell-icon {
+    font-size: 16px;
+}
+
+/* Hover effects */
+/*.search-bar:hover, .search-bar:focus-within {
+    border-color: #ced4da;
+    background-color: white;
+}
+
+.notification:hover {
+    background-color: #e9ecef;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 8px 16px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}*/
+
+.navbar {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    display: flex;          
+    justify-content: space-between;
+    align-items: center;    
+    padding: 1rem 2rem;     
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: calc(100% + 40px); /* Add this to ensure full width coverage */
+}
+
+/* Also adjust the positioning */
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: -10px; /* Adjust this value if needed to align perfectly */
+}
+
+
+
+
+
+
+.search-container {
+    display: flex;           /* Makes icon and input align in row */
+    align-items: center;     /* Centers items vertically */
+         /* Light gray background for search area */
+    padding: 0.5rem 1rem;    /* Padding inside search container */
+    border-radius: 8px;      /* Rounded corners */
+    width: 300px;            /* Fixed width for search container */
+}
+
+.search-icon {
+    color: blue;             /* Gray color for search icon */
+    margin-right: 0.5rem;    /* Space between icon and input */
+}
+
+.search-input {
+    border: none;            /* Removes default input border */
+    background: transparent; /* Makes input background transparent */
+    outline: none;          /* Removes focus outline */
+    width: 100%;            /* Takes remaining width */
+    font-size: 0.9rem;      /* Slightly smaller font */
+}
+
+.nav-right {
+    display: flex;           /* If you add more items later */
+    align-items: center;     /* Centers notification vertically */
+}
+
+.notification {
+    position: relative;      /* For positioning the badge */
+    cursor: pointer;         /* Shows it's clickable */
+    padding: 0.5rem;         /* Adds some clickable area */
+}
+
+.notification i {
+    color: #666;             /* Gray color for bell icon */
+    font-size: 1.2rem;       /* Slightly larger bell */
+}
+
+.notification-badge {
+    position: absolute;      /* Positions badge relative to notification div */
+    top: 0;                  /* At the top */
+    right: 0;                /* At the right */
+    width: 8px;              /* Small circle */
+    height: 8px;             /* Small circle */
+    background: #FF6B6B;     /* Orange/red color */
+    border-radius: 50%;      /* Makes it circular */
+}
+
+
+.travel-request {
+    position: relative; /* Needed for absolute positioning */
+    display: inline-flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-dot {
+    position: absolute;
+    top: 15px;
+    left: 38px;
+    width: 7px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.it-request {
+    position: relative; /* Needed for absolute positioning */
+    display: inline-flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notificationit-dot {
+    position: absolute;
+    top: 15px;
+    left: 38px;
+    width: 7px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.home-link {
+    color: #6474FF;
+    text-decoration: none;
+}
+
+.current-page {
+    color: #333;
+    font-weight: bolder;
+    padding-top: 5px;
+   
+}
+
+.profile-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    position: relative;
+    padding-top: 40px; /* Add space at top for overlapping image */
+}
+
+
+.profile-header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 40px; /* Add extra padding to account for image */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+
+.profile-image-wrapper {
+    position: absolute;
+    top: -100px; /* Move image up to overlap container */
+    left: 24px;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left:150px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.edit-button i {
+    font-size: 12px;
+    color: blue;
+}
+
+.profile-info {
+    margin-left: 20px; /* Add margin to prevent overlap with image */
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.designation {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.member-since {
+    color: #888;
+    font-size: 13px;
+}
+
+.action-cards {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    background: white;
+    padding: 5px;
+    color: blue;
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.team-members {
+    position: relative;
+}
+
+
+
+.member-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.member-avatars img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -8px;
+}
+
+.member-avatars img:first-child {
+    margin-left: 0;
+}
+
+
+.more {
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+/*.navigation-tabs {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 18px solid #ddd;
+    border-top: 2px solid #ddd;
+}*/
+
+.navigation-tabs {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 1px solid #E5E7EB; /* Light gray top border */
+    position: relative; /* Added for pseudo-element positioning */
+    margin-bottom: 20px; /* Space between tabs and content */
+}
+.navigation-tabs::after {
+    content: '';
+    position: absolute;
+    bottom: -16px; /* Position below the thin border */
+    left: 0;
+    width: 100%;
+    height: 16px; /* Height of the gray separator */
+    background-color: #F3F4F6; /* Light gray color */
+    border-top: 1px solid #E5E7EB; /* Optional: adds a subtle line at the top */
+    border-bottom: 1px solid #E5E7EB; /* Optional: adds a subtle line at the bottom */
+}
+
+
+
+.tab-button {
+    padding: 10px 0;
+    border: none;
+    background: none;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+}
+
+.tab-button.active {
+    color: #6474FF;
+    font-weight: 600;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6474FF;
+    z-index: 1; /* Ensure the blue indicator appears above the gray separator */
+}
+
+
+
+.personal-details {
+    padding: 20px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 5 columns for first row */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-item label {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Value styling */
+.detail-item p {
+    color: #333;
+    margin: 0;
+}
+
+/* Second row container */
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 2 columns for second row */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: start;
+}
+
+.project-title {
+    font-weight: 500;
+    color: #000;
+    white-space: nowrap;
+}
+
+.project-description {
+    color: #666;
+    line-height: 1.5;
+}
