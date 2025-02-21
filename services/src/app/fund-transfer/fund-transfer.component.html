@@ -1,0 +1,19 @@
+<h2>Fund Transfer</h2>
+
+<h3>Current Balance: {{ balance }}</h3>
+
+<!-- Deposit and Withdraw -->
+<input type="number" [(ngModel)]="amount" placeholder="Enter amount">
+<button class ="deposit" (click)="deposit()">Deposit</button>
+<button class="withdraw" (click)="withdraw()">Withdraw</button>
+
+<!-- Multiply Balance (Bonus) -->
+<h3>Apply Bonus</h3>
+<input type="number" [(ngModel)]="factor" placeholder="Enter multiplier">
+<button class="multiply" (click)="applyBonus()">Bonus</button>
+
+<!-- Divide Balance (Service Charge) -->
+<h3>Apply Service Charge</h3>
+<input type="number" [(ngModel)]="divisor" placeholder="Enter divisor">
+<button class="divide" (click)="applyCharge()">Charge</button>
+

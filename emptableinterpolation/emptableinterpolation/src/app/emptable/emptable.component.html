@@ -1,0 +1,39 @@
+
+   <div class="table-container">
+    <h2>Employee Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.empid}}</td>
+          <td>{{employee.name}}</td>
+          <td>{{employee.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="action-section">
+      <button (click)="processEmployeeData()" class="process-btn">Process Employee</button>
+      <button (click)="findYoungestEmployee()" class="process-btn">Youngest Employee</button>
+      
+      <div *ngIf="showProcessedData" class="results"> -->
+        <p><strong>Concatenated Names:</strong> {{concatenatedNames}}</p>
+        <p><strong>Total Age:</strong> {{totalAge}}</p>
+      </div>
+  
+      <div *ngIf="showYoungestEmployee && youngestEmployee" class="results"> -->
+        <h3>Youngest Employee Details:</h3>
+        <div *ngFor="let yemp of youngestEmployee">
+        <p><strong>Name:</strong> {{yemp.name}}</p>
+        <p><strong>Age:</strong> {{yemp.age}}</p>
+        <p><strong>Employee ID:</strong> {{yemp.empid}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

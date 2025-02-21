@@ -1,0 +1,14 @@
+<div class="container">
+  <input type="text" #inputRef placeholder="Enter text" /><br>
+
+  
+  <button appTooltip appDisableButton (click)="convertText(inputRef.value)">
+    Convert to Snake & Camel Case
+  </button>
+
+  
+  <div *ngIf="textConverted">
+    <p><strong>Snake Case:</strong> {{ snakeCaseText }}</p>
+    <p><strong>Camel Case:</strong> {{ camelCaseText }}</p>
+  </div>
+</div>
