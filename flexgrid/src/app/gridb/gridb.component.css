@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+     gap: 1rem;
+     margin: 1rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); 
+    text-align: center;
+
+}
+
+.r, .b, .y, .g, .bl {
+    padding: 5rem;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+    font-weight: bold;
+    color: white; 
+}
+
+.r {
+    background-color: red;
+}
+
+.b {
+    background-color: blue;
+}
+
+.y {
+    background-color: yellow;
+    color: black;
+}
+
+.g {
+    background-color: green;
+    grid-column: span 2; 
+}
+
+.bl {
+    background-color: black;
+}
+
