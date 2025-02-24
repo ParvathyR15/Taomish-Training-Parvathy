@@ -1,0 +1,22 @@
+<div class="main-container">
+   <h2>Form</h2>
+   <div class="form" [formGroup]="userForm">
+   <label>Name:</label><input type="text" placeholder="name" formControlName="name">
+   <label>Age:</label><input type="number" placeholder="age" formControlName="age">
+   <label>Date of Birth:</label>
+   <input type="date" placeholder="name" formControlName="dateofbirth">
+   <label>Role:</label>
+   <select formControlName="role">
+     <option>HR</option>
+     <option>Intern</option>
+     <option>Developer</option>
+    </select>
+    <div formGroupName="address">
+        <h5>Address:</h5>
+        <input type="text" placeholder="Street" formControlName="street">
+        <input type="text" placeholder="city" formControlName="city">
+        <input type="text" placeholder="pin" formControlName="pincode">
+    </div>
+    <button (click)="onclick()" type="submit">Submit</button>
+</div>
+</div>
