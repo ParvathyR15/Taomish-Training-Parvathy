@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>User List</h1>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.id }} - {{ user.name }} ({{ user.email}})
+      </li>
+    </ul>
+  
+    <h2>Add User</h2>
+    <form [formGroup]="userForm" (ngSubmit)="addUser()">
+      <input type="text" formControlName="name" placeholder="Enter Name" />
+      <input type="text" formControlName="email" placeholder="Enter Email" />
+      <button type="submit" >Add User</button>
+    </form>
+  </div>
