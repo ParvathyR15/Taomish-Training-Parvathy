@@ -1,0 +1,10 @@
+{
+    "title": "Employee Review Form",
+    "fields": [
+      { "label": "Employee Name", "type": "text", "name": "employeeName", "required": true },
+      { "label": "Department", "type": "text", "name": "department", "required": true },
+      { "label": "Performance Score", "type": "number", "name": "performanceScore", "required": true },
+      { "label": "Comments", "type": "textarea", "name": "comments", "required": false }
+    ]
+  }
+  

@@ -1,0 +1,10 @@
+<h1>Dynamic Forms Example</h1>
+
+<!-- Form Selection -->
+<select (change)="changeForm($event)">
+  <option value="employee-review">Employee Review</option>
+  <option value="approval-request">Approval Request</option>
+</select>
+
+<!-- Load Dynamic Form -->
+<app-dynamic-form [formType]="selectedFormType"></app-dynamic-form>

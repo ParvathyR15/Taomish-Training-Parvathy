@@ -1,0 +1,24 @@
+
+
+<div class="form-container">
+    <h2>{{ formData?.title }}</h2>
+    <form [formGroup]="form" (ngSubmit)="submitForm()"> 
+       <!-- Binds the Reactive Form (this.form) from dynamic-form.component.ts to this form. -->
+      <div *ngFor="let field of formData?.fields" class="form-group">
+         <!-- Iterates over fields in JSON to generate form inputs dynamically -->
+        <label>{{ field.label }}</label>
+  
+        <input *ngIf="field.type === 'text'" type="text" [formControlName]="field.name" />   
+        <input *ngIf="field.type === 'number'" type="number" [formControlName]="field.name" />
+  
+        <select *ngIf="field.type === 'select'" [formControlName]="field.name">
+          <option *ngFor="let option of field.options" [value]="option">{{ option }}</option>
+        </select>
+  
+        <textarea *ngIf="field.type === 'textarea'" [formControlName]="field.name"></textarea>
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,10 @@
+{
+    "title": "Approval Request Form",
+    "fields": [
+      { "label": "Requestor Name", "type": "text", "name": "requestorName", "required": true },
+      { "label": "Department", "type": "text", "name": "department", "required": true },
+      { "label": "Reason", "type": "textarea", "name": "reason", "required": true },
+      { "label": "Urgency Level", "type": "select", "name": "urgency", "required": true, "options": ["Low", "Medium", "High"] }
+    ]
+  }
+  
