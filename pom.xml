@@ -5,7 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Exception</artifactId>
+<!--<<<<<<< HEAD-->
+<!--    <artifactId>Exception</artifactId>-->
+<!--=======-->
+<!--    <artifactId>MultiTHreading</artifactId>-->
+<!--&gt;>>>>>> cc8d9c0cf3ffbe436f27ebc39e96a572e29ad80e-->
     <version>1.0-SNAPSHOT</version>
 
     <properties>
